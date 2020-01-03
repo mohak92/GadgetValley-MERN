@@ -1,1 +1,1 @@
-# GadgetValley-MERN
+# Gadget Valley
