@@ -11,6 +11,11 @@ require('dotenv').config();
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 
+// Parse request body as JSON
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+app.use(cookieParser());
+
 const PORT = process.env.PORT || 3001;
 
 // Start the server
