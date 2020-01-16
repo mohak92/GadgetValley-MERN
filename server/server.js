@@ -1,9 +1,15 @@
 const  express = require('express');
 const bodyParser =  require('body-parser');
 const cookieParser = require('cookie-parser');
+const mongoose = require('mongoose');
 
 // Initialize Express
 const app = express();
+require('dotenv').config();
+
+// Connect to the Mongo DB
+mongoose.Promise = global.Promise;
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 
 const PORT = process.env.PORT || 3001;
 
