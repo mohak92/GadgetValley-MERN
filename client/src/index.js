@@ -7,6 +7,7 @@ import { createStrore, applyMiddlewear } from 'redux';
 import promiseMiddlewear from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 import Reducer from './redux/reducers';
+import applyMiddlewear from 'redux'
 
 const createStroreWithMiddlewear = applyMiddlewear(promiseMiddlewear, ReduxThunk)(createStrore);
 
@@ -18,3 +19,4 @@ ReactDOM.render(
     </Provider>
     , document.getElementById('root'));
 
+export default applyMiddlewear;
