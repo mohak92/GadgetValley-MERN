@@ -1,17 +1,23 @@
 import React from './node_modules/react';
+import { Link } from 'react-router-dom';
 
 const ButtonOne = () => {
 
-        const buttons = () =>{
-            let template = '';
-            switch(props.type){
-                default: 
-                    template=null;
-            }
-
-
-            return template
+    const buttons = (props) => {
+        let template = '';
+        switch (props.type) {
+            case 'default':
+                template =
+                    <Link className='link_default'
+        to={props.linkTo}{...props.addStyles}>{props.title}</Link>
+                break;
+            default:
+                template = null;
         }
+
+
+        return template
+    }
 
 
 
