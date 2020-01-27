@@ -1,5 +1,5 @@
 import React from './node_modules/react';
-import ButtonOne from '../Utils/button';
+import ButtonOne from '../../Utils/button';
 
 const RegisterLogin = () => {
     return (
