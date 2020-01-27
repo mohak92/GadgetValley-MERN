@@ -1,7 +1,7 @@
-export defualt function(state={}, action){
+export default function (state={}, action){
     switch(action.type){
-        defualt:
-        return state;
+        default:
+        return state
     }
 };
 
