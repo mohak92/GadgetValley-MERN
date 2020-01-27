@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       Project 3
     </div>
-  );
+  )
 }
 
 export default App;
