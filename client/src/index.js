@@ -4,7 +4,7 @@ import App from './App';
 import { BrowswerRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import promiseMiddlewear from 'redux-promise';
+import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 import Reducer from './redux/reducers';
 
