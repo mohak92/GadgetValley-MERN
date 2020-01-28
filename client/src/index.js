@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowswerRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStrore, applyMiddlewear } from 'redux';
-import promiseMiddlewear from 'redux-promise';
+import { createStore, applyMiddleware } from 'redux';
+import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 import Reducer from './redux/reducers';
 
-const createStroreWithMiddlewear = applyMiddlewear(promiseMiddlewear, ReduxThunk)(createStrore);
-
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore);
 
 ReactDOM.render(
     <Provider store={createStroreWithMiddlewear(Reducer,
