@@ -1,5 +1,6 @@
-import React from './node_modules/react';
+import React from 'react';
 import ButtonOne from '../../Utils/button';
+import Login from './login'
 
 const RegisterLogin = () => {
     return (
@@ -23,6 +24,7 @@ const RegisterLogin = () => {
                         <div className="right">
                             <h2>Registered Customers</h2>
                             <p>If you have an existing account, please log in.</p>
+                            <Login/>
                             <ButtonOne
                                 type="default"
                                 title="Log in"

@@ -1,7 +1,7 @@
 import React from './node_modules/react';
 
 const Homepage = () => {
-    reutrn (
+    return (
     <div>
         Homepage
     </div>

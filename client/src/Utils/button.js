@@ -1,9 +1,9 @@
-import React from './node_modules/react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ButtonOne = () => {
+const ButtonOne = (props) => {
 
-    const buttons = (props) => {
+    const buttons = () => {
         let template = '';
         switch (props.type) {
             case 'default':

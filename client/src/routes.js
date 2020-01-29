@@ -1,6 +1,9 @@
 //importing basic react requirements
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
+import Layout from './hoc/layout'
+
+//importing components
 import RegisterLogin from './components/Register_login'
 import Homepage from './components/Homepage'
 import RegisterLogin from './components/register_login'
