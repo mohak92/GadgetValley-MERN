@@ -6,7 +6,7 @@ import Layout from './hoc/layout'
 //importing components
 import RegisterLogin from './components/Register_login'
 import Homepage from './components/Homepage'
-
+import RegisterLogin from './components/register_login'
 
 const Routes = () => {
     return (
@@ -14,6 +14,7 @@ const Routes = () => {
             <Switch>
                 <Route path="/register_login" exact component={RegisterLogin}/>
                 <Route path="/homepage" exact component={Homepage}/>
+                <Route path="/" exact component={Homepage}/>
             </Switch>
         </Layout>
     )
