@@ -23,7 +23,7 @@ const Footer = () => {
                                 />
                                 <div className="nfo">
                                     <div>Address</div>
-                                    <div>Kramer 2345</div>
+                                    <div>300 Atruim drive, Somerset, NJ</div>
                                 </div>
                             </div>
                             <div className="tag">
@@ -33,7 +33,7 @@ const Footer = () => {
                                 />
                                 <div className="nfo">
                                     <div>Phone</div>
-                                    <div>2345-22222</div>
+                                    <div>908-234-2222</div>
                                 </div>
                             </div>
                             <div className="tag">
@@ -53,13 +53,13 @@ const Footer = () => {
                                 />
                                 <div className="nfo">
                                     <div>Email</div>
-                                    <div>nfo@gadgetvalley.com</div>
+                                    <div>info@gadgetvalley.com</div>
                                 </div>
                             </div>
                         </div>
                     </div> 
                     <div className="left">
-                        <h2>Be the first to know</h2>
+                        <h2>Be the first to know about our latest deals</h2>
                         <div>
                             <div>
                             Get all the latest information on events, sales and offers.You can miss out.

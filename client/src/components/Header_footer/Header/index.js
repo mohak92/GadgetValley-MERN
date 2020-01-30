@@ -12,10 +12,10 @@ class Header extends Component {
                     </div>
                     <div className="right">
                         <div className="top">
-                            Links
+                            Login
                         </div>
                         <div className="bottom">
-                            Links
+                        Register
                         </div>
                     </div>
                 </div>
