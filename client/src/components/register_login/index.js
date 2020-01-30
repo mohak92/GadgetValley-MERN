@@ -1,6 +1,7 @@
 import React from 'react';
-import ButtonOne from '../../Utils/button';
+import ButtonOne from '../../utils/button';
 import Login from './login'
+
 
 const RegisterLogin = () => {
     return (
