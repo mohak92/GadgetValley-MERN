@@ -1,19 +1,17 @@
-//importing basic react requirements
-import React from 'react';
-import {Switch, Route} from 'react-router-dom'
+import React from "react";
+import { Switch, Route } from 'react-router-dom';
 
-//importing components
-import RegisterLogin from './components/register_login'
-
+import Layout from './hoc/layout'
+import Home from "./components/Home";
 
 const Routes = () => {
-    return (
-        <Layout>
-            <Switch>
-                <Route path="/" exact component={Homepage}/>
-            </Switch>
-        </Layout>
-    )
-};
+  return (
+    <Layout>
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+    </Layout>
+  );
+}
 
 export default Routes;
