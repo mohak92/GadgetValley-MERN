@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonOne from '../../Utils/button';
+import ButtonOne from '../utils/button';
 import Login from './login'
 
 const RegisterLogin = () => {
@@ -14,7 +14,7 @@ const RegisterLogin = () => {
                             <ButtonOne
                                 type="default"
                                 title="Create an Account"
-                                linkto="/register"
+                                linkTo="/register"
                                 addStyles={{
                                     //Insert CSS here.
                                     margin:'10px 0 0 0'
@@ -28,7 +28,7 @@ const RegisterLogin = () => {
                             <ButtonOne
                                 type="default"
                                 title="Log in"
-                                linkto="/login"
+                                linkTo="/login"
                                 addStyles={{
                                     //Insert CSS here
                                     margin:'10px 0 0 0'
