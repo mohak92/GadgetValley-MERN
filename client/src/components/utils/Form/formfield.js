@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-
 
 const Formfield = ({formdata, change, id}) => {
 
@@ -21,6 +19,7 @@ const Formfield = ({formdata, change, id}) => {
 
                     </div>
                 )
+            break;
             default: 
             formTemplate = null;
         }
