@@ -7,12 +7,15 @@ const ButtonOne = (props) => {
         let template = '';
         switch (props.type) {
             case 'default':
-                template =
-                    <Link className='link_default'
-        to={props.linkTo}{...props.addStyles}>{props.title}</Link>
+                template = <Link 
+                className='link_default'
+                to={props.linkTo}
+                {...props.addStyles}
+                >
+                    {props.title}</Link>
                 break;
             default:
-                template = null;
+                template = '';
         }
 
 
@@ -23,7 +26,7 @@ const ButtonOne = (props) => {
 
 
     return (
-        <div className='btn'>
+        <div className='my_link'>
             {buttons()}
         </div>
     )
