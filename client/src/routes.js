@@ -3,8 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import Layout from './hoc/layout'
 import Home from "./components/Home";
-import RegisterLogin from "./components/Register_login";
-import Register from "./components/Register_login/register";
+import RegisterLogin from "./components/register_login";
+import Register from "./components/register_login/register";
 import UserDashboard from "./components/User";
 
 const Routes = () => {
