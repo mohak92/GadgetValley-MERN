@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import ButtonOne from '../utils/button';
 import Login from './login'
 
