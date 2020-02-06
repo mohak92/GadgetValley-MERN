@@ -25,15 +25,6 @@ const RegisterLogin = () => {
                             <h2>Registered Customers</h2>
                             <p>If you have an existing account, please log in.</p>
                             <Login/>
-                            <ButtonOne
-                                type="default"
-                                title="Log in"
-                                linkTo="/login"
-                                addStyles={{
-                                    //Insert CSS here
-                                    margin:'10px 0 0 0'
-                                }}
-                            />
                         </div>
                     </div>
                 </div>
