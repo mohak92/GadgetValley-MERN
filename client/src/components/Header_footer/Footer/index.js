@@ -23,7 +23,12 @@ const Footer = () => {
                                 />
                                 <div className="nfo">
                                     <div>Address</div>
+<<<<<<< HEAD
                                     <div>300 Atruim drive, Somerset, NJ</div>
+=======
+                                    <div>300 Atrium Drive</div>
+                                    <div>Somerset NJ</div>
+>>>>>>> ec1550a963c7922626efd8555f47dd595b8562eb
                                 </div>
                             </div>
                             <div className="tag">
@@ -33,7 +38,11 @@ const Footer = () => {
                                 />
                                 <div className="nfo">
                                     <div>Phone</div>
+<<<<<<< HEAD
                                     <div>908-234-2222</div>
+=======
+                                    <div>908-345-2222</div>
+>>>>>>> ec1550a963c7922626efd8555f47dd595b8562eb
                                 </div>
                             </div>
                             <div className="tag">
@@ -59,10 +68,14 @@ const Footer = () => {
                         </div>
                     </div> 
                     <div className="left">
+<<<<<<< HEAD
                         <h2>Be the first to know about our latest deals</h2>
+=======
+                        <h2>Be the first to know!</h2>
+>>>>>>> ec1550a963c7922626efd8555f47dd595b8562eb
                         <div>
                             <div>
-                            Get all the latest information on events, sales and offers.You can miss out.
+                            Get all the latest information on deals, sales and offers. You can't miss out!
                             </div>
                         </div>
                     </div>      
