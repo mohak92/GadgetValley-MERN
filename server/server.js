@@ -9,7 +9,9 @@ require('dotenv').config();
 
 // Connect to the Mongo DB
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 
 // Parse request body as JSON
 app.use(bodyParser.urlencoded({extended:true}));
@@ -161,7 +163,7 @@ app.post('/api/users/login', (req, res) => {
     });
 });
 
-app.get('/api/user/logout', auth, (req, res) => {
+app.get('/api/users/logout', auth, (req, res) => {
     User.findOneAndUpdate(
         { _id:req.user._id },
         { token: '' },
