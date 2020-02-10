@@ -4,7 +4,7 @@ class AddProduct extends Component {
     render() {
         return (
             <div>
-                
+                Add Product 
             </div>
         );
     }
