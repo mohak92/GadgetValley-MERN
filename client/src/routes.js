@@ -8,6 +8,7 @@ import RegisterLogin from "./components/register_login";
 import Register from "./components/register_login/register";
 import Shop from "./components/Shop";
 import UserDashboard from "./components/User";
+import AddProduct from './components/User/Admin/add_product'
 
 const Routes = () => {
   return (
