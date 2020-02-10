@@ -1,4 +1,4 @@
-import axios from'axios';
+import axios from 'axios';
 import {
     GET_PRODUCTS_BY_SELL,
     GET_PRODUCTS_BY_ARRIVAL,
@@ -9,10 +9,10 @@ import {
 
 import { PRODUCT_SERVER } from '../components/utils/misc';
 
-export function getProductsBySell(){
+export function getProductsBySell() {
     //?sortBy=sold&order=desc&limit=100
     const request = axios.get(`${PRODUCT_SERVER}/articles?sortBy=sold&order=desc&limit=4`)
-                    .then(response => response.data);
+        .then(response => response.data);
 
     return {
         type: GET_PRODUCTS_BY_SELL,
@@ -21,9 +21,9 @@ export function getProductsBySell(){
 
 }
 
-export function getProductsByArrival(){
+export function getProductsByArrival() {
     const request = axios.get(`${PRODUCT_SERVER}/articles?sortBy=createdAt&order=desc&limit=4`)
-    .then(response => response.data);
+        .then(response => response.data);
 
     return {
         type: GET_PRODUCTS_BY_ARRIVAL,
@@ -31,8 +31,7 @@ export function getProductsByArrival(){
     }
 }
 
-export function getProductsToShop(skip, limit, filters = [], previousState = []){
-
+export function getProductsToShop(skip, limit, filters = [], previousState = []) {
     const data = {
         limit,
         skip,
@@ -41,26 +40,26 @@ export function getProductsToShop(skip, limit, filters = [], previousState = [])
 
     const request = axios.post(`${PRODUCT_SERVER}/shop`, data)
         .then(response => {
+            let newState = [
+                ...previousState,
+                ...response.data.articles
+            ];
             return {
                 size: response.data.size,
-                articles: response.data.articles
+                articles: newState
             }
         });
 
-        return {
-            type: GET_PRODUCTS_TO_SHOP,
-            payload: request
-        }
+    return {
+        type: GET_PRODUCTS_TO_SHOP,
+        payload: request
+    }
 }
 
-
-
-
-
-export function getBrands(){
+export function getBrands() {
 
     const request = axios.get(`${PRODUCT_SERVER}/brands`)
-                .then(response => response.data );
+        .then(response => response.data);
 
     return {
         type: GET_BRANDS,
@@ -69,9 +68,9 @@ export function getBrands(){
 
 }
 
-export function getCategory(){
+export function getCategory() {
     const request = axios.get(`${PRODUCT_SERVER}/categories`)
-    .then(response => response.data );
+        .then(response => response.data);
 
     return {
         type: GET_CATEGORIES,

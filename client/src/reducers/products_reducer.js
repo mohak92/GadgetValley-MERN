@@ -18,7 +18,8 @@ export default function(state={},action){
         case GET_CATEGORIES:
             return {...state, categories: action.payload}
         case GET_PRODUCTS_TO_SHOP:
-            return {...state, 
+            return {
+                ...state,
                 toShop: action.payload.articles,
                 toShopSize: action.payload.size
             }

@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+app.use(express.static('client/build'));
+
 //Models
 const { User } = require('./models/user');
 const { Brand } = require('./models/brand');
@@ -31,45 +33,44 @@ const { admin } = require('./middleware/admin');
 //=====================
 //      PRODUCTS
 //=====================
+app.post('/api/product/shop',(req,res)=>{
 
-app.post('api/product/shop', (req, res) => {
-
-    let order = req.body.order ? req.body.order : 'desc';
-    let sortBy = req.body.sortBy ? req.body.sortBy : '_id';
-    let limit = req.body.limit ? parseInt(req.body.limit) : 100;
+    let order = req.body.order ? req.body.order : "desc";
+    let sortBy = req.body.sortBy ? req.body.sortBy : "_id";
+    let limit = req.body.limit ? parseInt(req.body.limit) : 100; 
     let skip = parseInt(req.body.skip);
     let findArgs = {};
 
-    for (let key in req.body.filters) {
-        if (req.body.filters[key].length > 0) {
-            if (key === 'price') {
+    for(let key in req.body.filters){
+        if(req.body.filters[key].length >0 ){
+            if(key === 'price'){
                 findArgs[key] = {
                     $gte: req.body.filters[key][0],
                     $lte: req.body.filters[key][1]
                 }
-            } else {
+            }else{
                 findArgs[key] = req.body.filters[key]
             }
         }
     }
 
+    findArgs['publish'] = true;
+
     Product.
-        find(findArgs).
-        populate('brand').
-        populate('category').
-        sort([[sortBy, order]]).
-        skip(skip).
-        limit(limit).
-        exec((err, articles)=>{
-            if(err) return res.status(400).send(err)
-            res.status(200).json({
-                size: articles.length,
-            })
+    find(findArgs).
+    populate('brand').
+    populate('category').
+    sort([[sortBy,order]]).
+    skip(skip).
+    limit(limit).
+    exec((err,articles)=>{
+        if(err) return res.status(400).send(err);
+        res.status(200).json({
+            size: articles.length,
+            articles
         })
-})
-
-
-
+    })
+});
 
 app.get('/api/product/articles', (req, res) => {
     let order = req.query.order ? req.query.order : 'asc';
@@ -215,6 +216,14 @@ app.get('/api/users/logout', auth, (req, res) => {
         }
     );
 });
+
+// For Prod
+if(process.env.NODE_ENV === 'production') {
+    const path = require('path');
+    app.get('/*', (req, res) => {
+        res.sendfile(path.resolve(__dirname, '../client', 'build', 'index.html'));
+    });
+}
 
 const PORT = process.env.PORT || 3001;
 
