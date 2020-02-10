@@ -2,7 +2,8 @@ import {
     GET_PRODUCTS_BY_SELL,
     GET_PRODUCTS_BY_ARRIVAL,
     GET_BRANDS,
-    GET_CATEGORIES
+    GET_CATEGORIES,
+    GET_PRODUCTS_TO_SHOP
 } from '../actions/types';
  
 
@@ -16,6 +17,11 @@ export default function(state={},action){
             return {...state, brands: action.payload }
         case GET_CATEGORIES:
             return {...state, categories: action.payload}
+        case GET_PRODUCTS_TO_SHOP:
+            return {...state, 
+                toShop: action.payload.articles,
+                toShopSize: action.payload.size
+            }
         default:
             return state;
     }
