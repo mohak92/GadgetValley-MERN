@@ -169,16 +169,51 @@ class AddProduct extends Component {
                             formdata={this.state.formdata.name}
                             change={(element) => this.updateForm(element)}
                         />
-                        
+
                         <FormField
                             id={'description'}
                             formdata={this.state.formdata.description}
                             change={(element) => this.updateForm(element)}
                         />
 
+                        <FormField
+                            id={'price'}
+                            formdata={this.state.formdata.price}
+                            change={(element) => this.updateForm(element)}
+                        />
+
+                        <div className='form_divider'>
+                            <FormField
+                                id={'brand'}
+                                formdata={this.state.formdata.brand}
+                                change={(element) => this.updateForm(element)}
+                            />
+
+                            <FormField
+                                id={'shipping'}
+                                formdata={this.state.formdata.shipping}
+                                change={(element) => this.updateForm(element)}
+                            />
+
+                            <FormField
+                                id={'available'}
+                                formdata={this.state.formdata.available}
+                                change={(element) => this.updateForm(element)}
+                            />
+                        </div>
+                        <div className='form_divider'>
+                            <FormField
+                                id={'available'}
+                                formdata={this.state.formdata.available}
+                                change={(element) => this.updateForm(element)}
+                            />
+                        </div>
+
+
+
                     </form>
                 </div>
-            </UserLayout>
+            </UserLayout >
         );
     }
 }
