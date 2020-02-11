@@ -1,0 +1,118 @@
+{
+    "_id" : ObjectId("5e3d0a0347ad60256043e6ee"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "PlayStation 4 Pro",
+    "description" : "4K Gaming Console from Sony, features an awesomely-named eight-core x86-64 AMD Jaguar CPU with a 4.2 teraflops AMD Radeon-based graphics card, 8GB GDDR5 RAM and 1TB storage",
+    "price" : 74.99,
+    "brand" : ObjectId("5e3233af8dcd6d1213081f30"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e3238878dcd6d1213081f36"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-07T06:56:03.550Z"),
+    "updatedAt" : ISODate("2020-02-07T06:56:03.550Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3d0a8047ad60256043e6ef"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "Xbox One X",
+    "description" : "CPU: 2.3 GHz AMD-customized Jaguar Evolved (8-core). GPU 1172 MHz AMD-customized UC RX 580. Compute power: 6 TFLOPS RAM: 12 GB GDDR5. Storage: 1TB HDD",
+    "price" : 74.99,
+    "brand" : ObjectId("5e3233a78dcd6d1213081f2f"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e3238878dcd6d1213081f36"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-07T06:58:08.508Z"),
+    "updatedAt" : ISODate("2020-02-07T06:58:08.508Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3d0bb147ad60256043e6f0"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "iPhone 11 Pro",
+    "description" : "The iPhone 11 Pro, A13 Bionic chip, which has a 5.8-inch display, features a resolution of 2436 x 1125 at 458 ppi, while the 6.5-inch iPhone 11 Pro Max features a resolution of 2688 x 1242 at 458 ppi. Apple's newest display is 15 percent more power efficient, which contributes to some impressive battery life gains",
+    "price" : 49.99,
+    "brand" : ObjectId("5e3218f3832ddc0f6fbfd490"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e3238628dcd6d1213081f33"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-07T07:03:13.754Z"),
+    "updatedAt" : ISODate("2020-02-07T07:03:13.754Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3d0c2747ad60256043e6f1"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "RTX 2080Ti",
+    "description" : "NVIDIA's newest flagship graphics card, the GeForce RTX™ 2080 Ti, is a revolution in gaming realism and performance. Its powerful NVIDIA Turing™ GPU architecture, breakthrough technologies, and 11 GB of next-gen, ultra-fast GDDR6 memory make it the world's ultimate gaming GPU",
+    "price" : 99.99,
+    "brand" : ObjectId("5e3233bc8dcd6d1213081f31"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e3238788dcd6d1213081f35"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-07T07:05:11.899Z"),
+    "updatedAt" : ISODate("2020-02-07T07:05:11.899Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3d0cd647ad60256043e6f2"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "Radeon RX 5700 XT",
+    "description" : "Radeon RX 5700 XT is the upper of two new graphics cards, based on a 7-nanometer (7nm) production process, that aim to muffle the thunder Nvidia has been enjoying in the midrange market for so long. And after running it through our benchmarks, this card does so with gusto",
+    "price" : 89.99,
+    "brand" : ObjectId("5e3233c38dcd6d1213081f32"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e3238788dcd6d1213081f35"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-07T07:08:06.475Z"),
+    "updatedAt" : ISODate("2020-02-07T07:08:06.475Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e418d475fef7018e55f27c7"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "Hero 8 Black",
+    "description" : "The flagship that puts the 'pro' in GoPro. The Hero 8 Black is the best GoPro yet, but without its Mod accessories, it's only a minor update on its predecessor. The more streamlined design, new microphone and improved app are all big bonuses, while pros will appreciate the higher max bit-rate and 1080p livestreaming",
+    "price" : 19.99,
+    "brand" : ObjectId("5e418ab55fef7018e55f27c5"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e418ce05fef7018e55f27c6"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-10T17:05:11.469Z"),
+    "updatedAt" : ISODate("2020-02-10T17:05:11.469Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e418e0a5fef7018e55f27c8"),
+    "sold" : 0,
+    "images" : [],
+    "name" : "Galaxy watch active 2",
+    "description" : "The Galaxy Watch Active 2 looks and feels a lot like its predecessor -- both have a circular AMOLED touchscreen -- but the Active 2 now comes in two sizes (40mm or 44mm) and adds an LTE option, and all models have an ECG or electrocardiogram built in, just like the Apple Watch ( $399 at Apple )",
+    "price" : 29.99,
+    "brand" : ObjectId("5e418a985fef7018e55f27c4"),
+    "shipping" : true,
+    "available" : true,
+    "category" : ObjectId("5e3238708dcd6d1213081f34"),
+    "publish" : true,
+    "createdAt" : ISODate("2020-02-10T17:08:26.182Z"),
+    "updatedAt" : ISODate("2020-02-10T17:08:26.182Z"),
+    "__v" : 0
+}
