@@ -1,0 +1,41 @@
+{
+    "_id" : ObjectId("5e3238628dcd6d1213081f33"),
+    "name" : "Smartphone",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3238708dcd6d1213081f34"),
+    "name" : "Smartwatch",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3238788dcd6d1213081f35"),
+    "name" : "GPU",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3238878dcd6d1213081f36"),
+    "name" : "Gaming Console",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e32389d8dcd6d1213081f37"),
+    "name" : "Drone",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3656e989995e556a8ee4be"),
+    "name" : "School",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e418ce05fef7018e55f27c6"),
+    "name" : "Camera",
+    "__v" : 0
+}
