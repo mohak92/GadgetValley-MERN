@@ -201,15 +201,35 @@ class AddProduct extends Component {
                                 change={(element) => this.updateForm(element)}
                             />
                         </div>
-                        <div className='form_divider'>
-                            <FormField
-                                id={'available'}
-                                formdata={this.state.formdata.available}
-                                change={(element) => this.updateForm(element)}
-                            />
+                        <div className='form_divider'></div>
+                        <FormField
+                            id={'category'}
+                            formdata={this.state.formdata.category}
+                            change={(element) => this.updateForm(element)}
+                        />
+                        <div className='form_divider'></div>
+
+                        <FormField
+                            id={'publish'}
+                            formdata={this.state.formdata.publish}
+                            change={(element) => this.updateForm(element)}
+                        />
+
+                        {this.state.formSuccess ?
+                        <div className="form-success">
+                            Success..
                         </div>
+                        :null}
 
 
+                        {this.state.formError ?
+                            <div className="error_label">
+                                Please check your data
+                                        </div>
+                            : null}
+                        <button onClick={(event) => this.submitForm(event)}>
+                                Add Product
+                                    </button>
 
                     </form>
                 </div>
