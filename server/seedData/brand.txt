@@ -1,0 +1,47 @@
+{
+    "_id" : ObjectId("5e3218f3832ddc0f6fbfd490"),
+    "name" : "Apple",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3233a78dcd6d1213081f2f"),
+    "name" : "Microsoft",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3233af8dcd6d1213081f30"),
+    "name" : "Sony",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3233bc8dcd6d1213081f31"),
+    "name" : "NVIDIA",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e3233c38dcd6d1213081f32"),
+    "name" : "AMD",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e360775737b4b527cefc998"),
+    "name" : "Lenovo",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e418a985fef7018e55f27c4"),
+    "name" : "Samsung",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5e418ab55fef7018e55f27c5"),
+    "name" : "GoPro",
+    "__v" : 0
+}
