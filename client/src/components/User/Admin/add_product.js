@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import UserLayout from '../../../hoc/user';
 
 import FormField from '../../utils/Form/formfield';
-import { update, generateData, isFormValid } from '../../utils/Form/formActions';
+import { update, generateData, isFormValid, populateOptionFields } from '../../utils/Form/formActions';
 
 import { connect } from 'react-redux';
 import { getBrands, getCategory } from '../../../actions/products_actions';
+import { response } from 'express';
 
 class AddProduct extends Component {
 
@@ -155,6 +156,15 @@ class AddProduct extends Component {
             }
         }
     }
+
+    componentDidMount(){
+        const formdata = this.state.formdata;
+
+        this.props.dispatch(getBrands()).then( response =>{
+            const newForm = populateOptionFields(form,this.props.products.brands, 'brand');
+        })
+    }
+
 
     render() {
         return (
