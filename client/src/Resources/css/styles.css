@@ -110,7 +110,7 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     padding: 10px;
-    background: #e1ddc3;
+    background:  #2196F3 ;
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -139,7 +139,7 @@ textarea {
 
 .label_inputs {
     display: inline-block;
-    background: #999592;
+    background: #000000;
     color: #fff;
     padding: 5px 5px;
 }
@@ -186,7 +186,7 @@ select {
     text-transform: uppercase;
     padding: 10px;
     display: table;
-    background: #e1ddc3;
+    background: #2196F3 ;
     margin-top: 10px;
 }
 
@@ -209,7 +209,7 @@ select {
 .card_link:hover,
 .bag_link:hover,
 .add_to_cart_link:hover {
-    background: #aaaaaa;
+    background: #2196F3;
     color: #ffff;
 }
 .add_to_cart_link {
@@ -866,7 +866,7 @@ footer .business_nfo .nfo {
     border: 1px solid #f1f1f1;
     padding: 10px;
     position: relative;
-    background: #999592;
+    background: #000000;
     color: #fff;
 }
 
