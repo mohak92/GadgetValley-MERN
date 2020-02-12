@@ -66,3 +66,13 @@ export const isFormValid = (formdata, formName) => {
     return formIsValid;
 
 }
+
+export const populateOptionFields = (formdata, arrayData =[], fields) => {
+        const newArray = []
+        const newFormdata = {...formdata, }
+
+// still working
+        arrayData.forEach(item=>{
+            newArray.push({key:item._id, value: item.name})
+        })
+}
