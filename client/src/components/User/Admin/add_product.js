@@ -21,7 +21,7 @@ class AddProduct extends Component {
                     label: 'Product name',
                     name: 'name_input',
                     type: 'text',
-                    placeholder: 'Enter your name'
+                    placeholder: 'Enter product name'
                 },
                 validation: {
                     required: true
@@ -38,7 +38,7 @@ class AddProduct extends Component {
                     label: 'Product description',
                     name: 'description_input',
                     type: 'text',
-                    placeholder: 'Enter your description'
+                    placeholder: 'Enter product description'
                 },
                 validation: {
                     required: true
