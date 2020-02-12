@@ -36,29 +36,29 @@ const Formfield = ({ formdata, change, id }) => {
                     </div>
                 )
                 break;
-            case ('select'):
+                case('select'):
                 formTemplate = (
                     <div className="formBlock">
-                        {formdata.showlabel ?
+                        { formdata.showlabel ? 
                             <div className="label_inputs">{formdata.config.label}</div>
-                            : null}
-                            <select
+                        :null}
+                        <select
                             value={formdata.value}
-                            onBlur={(event) => change({ event, id, blur: true })}
-                            onChange={(event) => change({ event, id })}
-                            >
-                                <option value="">Select One</option>
-                                {
-                                    formdata.config.options.map(item=>(
-                                        <option
-                                        key={item.key}
-                                        value={item.value}
-                                        > 
-                                        {item.value}   
-                                        </option>
-                                    ))
-                                }
-                            </select>
+                            onBlur={(event)=> change({event,id,blur:true})}
+                            onChange={(event)=> change({event,id}) }
+                        >
+                            <option value="">Select one</option>
+                            {
+                                formdata.config.options.map(item=>(
+                                    <option 
+                                        key={item.key} 
+                                        value={item.key}
+                                    >
+                                        {item.value}
+                                    </option>
+                                ))
+                            }
+                        </select>
                         {showError()}
                     </div>
                 )

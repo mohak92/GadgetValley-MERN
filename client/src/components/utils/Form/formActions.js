@@ -67,12 +67,32 @@ export const isFormValid = (formdata, formName) => {
 
 }
 
-export const populateOptionFields = (formdata, arrayData =[], fields) => {
-        const newArray = []
-        const newFormdata = {...formdata, }
+export const populateOptionFields= (formdata, arrayData =[],field) => {
+    const newArray = [];
+    const newFormdata = {...formdata};
 
-// still working
-        arrayData.forEach(item=>{
-            newArray.push({key:item._id, value: item.name})
-        })
+    arrayData.forEach(item=>{
+        newArray.push({key:item._id,value:item.name});
+    });
+
+    newFormdata[field].config.options = newArray;
+    return newFormdata;
+}
+
+export const resetFields = (formdata, formName)=>{
+    const newFormdata = {...formdata};
+
+    for(let key in newFormdata){
+        if(key === 'images'){
+            newFormdata[key].value = [];
+        }else{
+            newFormdata[key].value = '';
+        }
+
+        newFormdata[key].valid = false;
+        newFormdata[key].touched = false;
+        newFormdata[key].validationMessage = '';
+    }
+
+    return newFormdata
 }
