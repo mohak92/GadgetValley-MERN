@@ -3,7 +3,8 @@ import {
     LOGIN_USER,
     REGISTER_USER,
     AUTH_USER,
-    LOGOUT_USER
+    LOGOUT_USER,
+    ADD_TO_CART_USER
 } from './types';
 
 import { USER_SERVER } from '../components/utils/misc';
