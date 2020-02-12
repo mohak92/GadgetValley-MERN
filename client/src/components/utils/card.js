@@ -25,7 +25,7 @@ class Card extends Component {
                     <div className="tags">
                         <div className="brand">{props.brand.name}</div>
                         <div className="name">{props.name}</div>
-                        <div className="name">${props.price}</div>
+                        <div className="name">${props.price}/month</div>
                     </div>
 
                     {props.grid ?
