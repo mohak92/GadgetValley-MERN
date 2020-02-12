@@ -67,9 +67,9 @@ class Card extends Component {
 
 mapStateToProps = (state) => {
     return {
-        prop: state.prop
+        user: state.user
     }
 }
 
 
-export default connect()(Card);
+export default connect(mapStateToProps)(Card);
