@@ -24,7 +24,7 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 * [Material-UI](https://material-ui.com/) - A React component library based on Material Design.
 * [Moment.js](https://momentjs.com/) - A JavaScript library for time calculations.
 * [Mongoose](https://mongoosejs.com/docs/guide.html) -  Object document mapping for MongoDB/Node.js
-* [Cloudinary](https://cloudinary.com)
+* [Cloudinary](https://cloudinary.com) - Cloud based image and video management services.
 * [Cookie Parser](https://www.npmjs.com/package/cookie-parser) - Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
 * [express-formidable](https://www.npmjs.com/package/express-formidable) - Formidable is a Node.js module for parsing form data, including multipart/form-data file upload.
 * [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into
