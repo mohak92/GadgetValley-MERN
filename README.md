@@ -38,7 +38,9 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 ## Local Workspace Setup
 * Clone this repository onto your local machine
 * Have MongoDB installed and running
-* In the project directory, run `$npm install && cd client && npm install`
+* In the project directory, run `$npm install`
+* Navigate to client directory `$cd client`
+* In the client directory, run `$npm install`
 * Go to https://cloudinary.com/ create an account and select free plan and note down the following: Cloud Name, API Key & API Secret
 * Create a .env file in the root of the project directory and add the following
 ```
