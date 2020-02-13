@@ -1,5 +1,5 @@
 # Gadget Valley
-Gagdget Valley is an online marketplace for reting the latest and greatest technology for your needs.
+Gagdget Valley is an online marketplace for renting the latest and greatest technology for your needs.
 Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of months until you finish your project, or trying out new smartphones every 3 months.
 
 ## Using Gadget Valley
@@ -8,7 +8,7 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 * Sign up if you'd like OR use the test account:
     * Login: user@gadget.com
     * Password: password1234
-* Brouse through products
+* Browse through products
 * View product description for products that interest you
 * Apply Filters such as brand, category and price to easily find the product you would like to rent
 * Add product to cart and checkout with 1 click using PayPal (This web app is For demo purposes only you won't be charged)
