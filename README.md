@@ -1,5 +1,5 @@
 # Gadget Valley
-Gagdget Valley is an online marketplace for renting the latest and greatest technology for your needs.
+Gadget Valley is an online marketplace for renting the latest and greatest technology for your needs.
 Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of months until you finish your project, or trying out new smartphones every 3 months.
 
 ## Using Gadget Valley
