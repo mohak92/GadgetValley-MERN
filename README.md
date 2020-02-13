@@ -1,5 +1,5 @@
 # Gadget Valley
-Gagdget Valley is an online marketplace for reting the latest and greatest technology for your needs.
+Gadget Valley is an online marketplace for renting the latest and greatest technology for your needs.
 Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of months until you finish your project, or trying out new smartphones every 3 months.
 
 ## Using Gadget Valley
@@ -8,7 +8,7 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 * Sign up if you'd like OR use the test account:
     * Login: user@gadget.com
     * Password: password1234
-* Brouse through products
+* Browse through products
 * View product description for products that interest you
 * Apply Filters such as brand, category and price to easily find the product you would like to rent
 * Add product to cart and checkout with 1 click using PayPal (This web app is For demo purposes only you won't be charged)
@@ -24,7 +24,7 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 * [Material-UI](https://material-ui.com/) - A React component library based on Material Design.
 * [Moment.js](https://momentjs.com/) - A JavaScript library for time calculations.
 * [Mongoose](https://mongoosejs.com/docs/guide.html) -  Object document mapping for MongoDB/Node.js
-* [Cloudinary](https://cloudinary.com)
+* [Cloudinary](https://cloudinary.com) - Cloud based image and video management services.
 * [Cookie Parser](https://www.npmjs.com/package/cookie-parser) - Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
 * [express-formidable](https://www.npmjs.com/package/express-formidable) - Formidable is a Node.js module for parsing form data, including multipart/form-data file upload.
 * [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into
@@ -38,7 +38,9 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 ## Local Workspace Setup
 * Clone this repository onto your local machine
 * Have MongoDB installed and running
-* In the project directory, run `$npm install && cd client && npm install`
+* In the project directory, run `$npm install`
+* Navigate to client directory `$cd client`
+* In the client directory, run `$npm install`
 * Go to https://cloudinary.com/ create an account and select free plan and note down the following: Cloud Name, API Key & API Secret
 * Create a .env file in the root of the project directory and add the following
 ```
