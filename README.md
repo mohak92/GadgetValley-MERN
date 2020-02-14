@@ -7,7 +7,7 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 * Take a tour on the home page
 * Sign up if you'd like OR use the test account:
     * Login: user@gadget.com
-    * Password: password1234
+    * Password: password123
 * Browse through products
 * View product description for products that interest you
 * Apply Filters such as brand, category and price to easily find the product you would like to rent
