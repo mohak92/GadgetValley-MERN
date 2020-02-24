@@ -30,6 +30,6 @@ const Routes = () => {
       </Switch>
     </Layout>
   );
-}
+};
 
 export default Routes;
