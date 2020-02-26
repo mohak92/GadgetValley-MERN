@@ -39,3 +39,9 @@
     "name" : "Camera",
     "__v" : 0
 }
+
+{
+    "_id" : ObjectId("5e44176e419d2c39c1aa8cc5"),
+    "name" : "Desktop",
+    "_v" : 0
+}
