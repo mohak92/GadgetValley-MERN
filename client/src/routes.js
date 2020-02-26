@@ -14,6 +14,8 @@ import ManageCategories from './components/User/Admin/manage_categories';
 import UserCart from './components/User/cart';
 import UpdateProfile from './components/User/update_profile';
 
+import PageNotFound from './components/utils/page_not_found';
+
 const Routes = () => {
   return (
     <Layout>
@@ -29,6 +31,8 @@ const Routes = () => {
         <Route path="/register_login" exact component={Auth(RegisterLogin, false)} />
         <Route path="/shop" exact component={Auth(Shop, null)} />
         <Route path="/" exact component={Auth(Home, null)} />
+        <Route component={Auth(PageNotFound)} />
+
       </Switch>
     </Layout>
   );
