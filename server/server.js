@@ -6,7 +6,6 @@ const cloudinary = require('cloudinary');
 const mongoose = require('mongoose');
 const async = require('async');
 
-
 // Initialize Express
 const app = express();
 require('dotenv').config();
@@ -41,8 +40,8 @@ const { Payment } = require('./models/payment');
 const { auth } = require('./middleware/auth');
 const { admin } = require('./middleware/admin');
 
-//UTILS
-const { sendEmail } = require('./utils/mail/index')
+// UTILS
+const { sendEmail } = require('./utils/mail/index');
 
 //=====================
 //      PRODUCTS
@@ -193,11 +192,10 @@ app.get('/api/users/auth', auth, (req, res) => {
 
 app.post('/api/users/register', (req, res) => {
     const user = new User(req.body);
-    
     user.save((err, doc) => {
         if (err) return res.json({ success: false, err });
         sendEmail(doc.email,doc.name,null,"welcome");
-        return res.status(200).json({
+        res.status(200).json({
             success: true
         });
     })

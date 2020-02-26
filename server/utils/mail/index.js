@@ -1,49 +1,47 @@
-const mailer = require('nodemailer')
+const mailer = require('nodemailer');
+const { welcome } = require("./welcome_template");
 require('dotenv').config();
 
-const getEmailData = (to, name, token, template) => {
+
+const getEmailData = (to,name,token,template) =>{
     let data = null;
 
-    switch (template) {
+    switch(template){
         case "welcome":
             data = {
-                from: "Steven <sj2858593@gmail.com>",
+                from: "Gadget Valley <gadget.valley.ru@gmail.com>",
                 to,
-                subject: `Welcome to Gagdet Valley ${name}`,
-                html: "<b>Welcome!<b>"
+                subject: `Welcome to Gadget Valley ${name}`,
+                html: welcome()
             }
-            break;
+        break;
         default:
             data;
     }
-
     return data;
-
 }
 
-const sendEmail = (to, name, token, type) => {
+
+const sendEmail = (to,name,token,type) => {
 
     const smtpTransport = mailer.createTransport({
-        service: "Gmail",
-        auth: {
-            user: "sj2858593@gmail.com",
+        service:"Gmail",
+        auth:{
+            user: "gadget.valley.ru@gmail.com",
             pass: process.env.EMAIL_PASS
         }
     });
 
-    const mail = getEmailData(to, name, token, type)
+    const mail = getEmailData(to,name,token,type)
 
-    smtpTransport.sendMail(mail, function (error, response) {
-        if (error) {
+    smtpTransport.sendMail(mail,function(error,response){
+        if(error){
             console.log(error);
-
         } else {
-            console.log('email sent')
+            cb()
         }
         smtpTransport.close();
     })
-
-
 }
 
 module.exports = { sendEmail }
