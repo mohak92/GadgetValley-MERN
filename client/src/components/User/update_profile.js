@@ -1,13 +1,13 @@
 import React from 'react';
-import Userlayout from '../../hoc/user'
-import UpdatePersonalNfo from './update_personal_nfo'
+import UserLayout from '../../hoc/user';
+import UpdatePersonalNfo from './update_personal_nfo';
 
 const UpdateProfile = () => {
     return (
-        <Userlayout>
+        <UserLayout>
             <h1>Profile</h1>
             <UpdatePersonalNfo/>
-        </Userlayout>
+        </UserLayout>
     );
 };
 
