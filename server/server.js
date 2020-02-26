@@ -40,6 +40,9 @@ const { Payment } = require('./models/payment');
 const { auth } = require('./middleware/auth');
 const { admin } = require('./middleware/admin');
 
+// UTILS
+const { sendEmail } = require('./utils/mail/index');
+
 //=====================
 //      PRODUCTS
 //=====================
@@ -191,6 +194,7 @@ app.post('/api/users/register', (req, res) => {
     const user = new User(req.body);
     user.save((err, doc) => {
         if (err) return res.json({ success: false, err });
+        sendEmail(doc.email,doc.name,null,"welcome");
         res.status(200).json({
             success: true
         });
