@@ -123,17 +123,16 @@ export function onSuccessBuy(data){
     }
 }
 
-
 export function updateUserData(dataToSubmit){
-    const request = axios.post(`${USER_SERVER}/update_profile`, dataToSubmit)
+    const request = axios.post(`${USER_SERVER}/update_profile`,dataToSubmit)
                     .then(response => {
                         return response.data
                     });
-
-        return {
-            type: UPDATE_DATA_USER,
-            payload: request
-        }
+    
+    return {
+        type: UPDATE_DATA_USER,
+        payload: request
+    }
 }
 
 export function clearUpdateUser(){

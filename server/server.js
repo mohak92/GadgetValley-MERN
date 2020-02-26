@@ -197,6 +197,23 @@ app.post('/api/users/register', (req, res) => {
     })
 });
 
+app.post('/api/users/update_profile',auth,(req,res)=>{
+
+    User.findOneAndUpdate(
+        { _id: req.user._id },
+        {
+            "$set": req.body
+        },
+        { new: true },
+        (err,doc)=>{
+            if(err) return res.json({success:false,err});
+            return res.status(200).send({
+                success:true
+            })
+        }
+    );
+});
+
 app.post('/api/users/login', (req, res) => {
     User.findOne({ 'email': req.body.email }, (err, user) => {
         if (!user) return res.json({ loginSuccess: false, message: 'Auth failed email not found' });

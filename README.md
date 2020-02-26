@@ -18,7 +18,7 @@ Example: Renting $52,000 fully specced Mac Pro for $1000/month for couple of mon
 * [Heroku](https://www.heroku.com/)- Cloud platform which host web application. 
 * [React](https://reactjs.org/) - A Component Based JavaScript library for building user interfaces.
 * [Redux](https://www.npmjs.com/package/redux) - Redux is a predictable state container for JavaScript apps.
-* [Node](https://nodejs.org/en) - A JavaScript run-time environment that exectues server side code.
+* [Node](https://nodejs.org/en) - A JavaScript run-time environment that executes server side code.
 * [Express](https://www.npmjs.com/package/express) - A Node package used as middleware to create routes.
 * [MongoDB](https://www.mongodb.com/) - MongoDB is a general purpose, document-based, distributed database.
 * [Material-UI](https://material-ui.com/) - A React component library based on Material Design.
@@ -52,7 +52,7 @@ CLOUD_API_SECRET=API Secret from cloudinary
 ```
 * MONGODB_URI and SECRET you can use the same values, for CLOUD_NAME, CLOUD_API_KEY, CLOUD_API_SECRET signup and get those values from https://cloudinary.com/
 * Run `$npm run dev` to spin up the project and confirm connection to Mongo is established
-* If the server & client starts, lauch the application in a modern web browser such as Chrome or Safari and head to http://localhost:3000
+* If the server & client starts, launch the application in a modern web browser such as Chrome or Safari and head to http://localhost:3000
 * Proceed to create users in the application and use freely.
 * If you would like to try admin functionality go to users collection using a Mongo GUI and change the role from 0 to 1 and update the document.
 
@@ -64,7 +64,7 @@ CLOUD_API_SECRET=API Secret from cloudinary
 * Run `$ heroku addons:create mongolab` to add MongoDB.
 * Configure environment variables on heroku dashboard.
 * Run `$ mongodump` then import the bson to Heroku's mongoDB.
-* Push code to a github reop.
+* Push code to a github repo.
 * Run `$ git push heroku master`
 * Application deployed.
 
