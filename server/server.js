@@ -405,6 +405,30 @@ if(process.env.NODE_ENV === 'production') {
     });
 }
 
+
+app.post('api/users/update_profile', auth, (req, res)=>{
+
+    User.findOneAndUpdate(
+        { _id: req.user.id },
+        {
+            "$set": req.body
+        },
+        {new: true},
+        (err,doc)=>{
+            if(err) return res.json({success:false, err});
+            return res.status(200).send({
+                succes:true
+            })
+        }
+    )
+})
+
+
+
+
+
+
+
 const PORT = process.env.PORT || 3001;
 
 // Start the server
