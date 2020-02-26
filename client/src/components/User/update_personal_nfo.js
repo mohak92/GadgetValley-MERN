@@ -84,10 +84,10 @@ class UpdatePersonalNfo extends Component {
     }
 
     componentDidMount(){
-        const newFormdata = populateFields(this.state.formdata, this.props.userData)
+        const newFormdata = populateFields(this.state.formData, this.props.userData)
 
         this.setState({
-            formdata: newFormdata
+            formData: newFormdata
         })
     }
 
@@ -146,4 +146,10 @@ class UpdatePersonalNfo extends Component {
     }
 }
 
-export default UpdatePersonalNfo;
+const mapStateToProps = (state) => {
+    return {
+        user: state.user
+    }
+}
+
+export default connect(mapStateToProps)(UpdatePersonalNfo);
