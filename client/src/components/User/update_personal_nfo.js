@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FormField from '../utils/Form/formfield';
 import { connect } from 'react-redux';
-import { update, generateData, isFormValid } from '../utils/Form/formActions';
+import { update, generateData, isFormValid, populateFields } from '../utils/Form/formActions';
 
 
 class UpdatePersonalNfo extends Component {
@@ -83,6 +83,13 @@ class UpdatePersonalNfo extends Component {
         }
     }
 
+    componentDidMount(){
+        const newFormdata = populateFields(this.state.formdata, this.props.userData)
+
+        this.setState({
+            formdata: newFormdata
+        })
+    }
 
 
     render() {
